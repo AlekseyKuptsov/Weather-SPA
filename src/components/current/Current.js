@@ -15,7 +15,7 @@ const Current = () => {
     // } else if (currentWeatherLoadingStatus === "error") {
     //     console.log('error')
     // } else if (currentWeatherLoadingStatus === "loaded") {
-    //     setTemp(currentWeather.currentWeather.currentConditions.temp);
+    //     setTemp(currentWeather.currentConditions.temp);
 
     return (
         <section className="current">
