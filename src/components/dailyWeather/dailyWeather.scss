@@ -1,0 +1,54 @@
+@import '../../styles/variables.scss';
+
+.daily {
+    margin-top: 30px;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__weather, &__daylight {
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        border-radius: 15px;
+    }
+    &__weather {
+        padding: 20px 20px;
+        width: 860px;
+        display: grid;
+        grid-template-columns: repeat(7, minmax(min-content, max-content));
+        justify-content: space-between;
+        column-gap: 20px;
+        &-item {
+            display: grid;
+            grid-template-rows: repeat(5, 50px);
+            row-gap: 10px;
+            align-items: center;
+            svg {
+                height: 50px;
+                width: 50px;
+            }
+        }
+        &-descr {
+            font-weight: 500;
+        }
+    }
+    &__daylight {
+        width: 290px;
+        display: block;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        &-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            span {
+                color: $third-color;
+            }
+        }
+        &-icon {
+            height: 45px;
+            width: 45px;
+        }
+    }
+}

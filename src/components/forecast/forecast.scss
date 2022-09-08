@@ -1,0 +1,80 @@
+@import '../../styles/variables.scss';
+
+.forecast {
+    margin-top: 30px;
+    &__buttons {
+        display: flex;
+        button {
+            margin-right: 15px;
+        }
+    }
+    &__cards {
+        // display: flex;
+        // justify-content: space-between;
+        padding: 20px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        border-radius: 15px;
+        margin-top: 10px;
+        position: relative;
+        &-item {
+            margin: 0 8px;
+            padding: 10px;
+            border-radius: 15px;
+            background-color: $second-color;
+            width: 150px !important;
+            height: 200px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: start;
+            display: flex !important;
+            flex-direction: column;
+            justify-content: space-between;
+            font-size: 13px;
+            color: $third-color;
+        }
+        &-icon {
+            height: 55px;
+            svg {
+                display: block;
+                height: 100%;
+            }
+        }
+        &-day, &-maxtemp {
+            font-size: 18px;
+            font-weight: 500;
+            color: black;
+        }
+    }
+}
+
+.slick-arrow {
+    width: 44px;
+    height: 44px;
+    margin-top: -22px;
+    background-size: 12px 12px;
+    background-position: center center;
+    background-color: rgba(255, 255, 255);
+    border-radius: 44px;
+    font-size: 0;
+    position: absolute;
+    z-index: 10;
+    box-shadow: none;
+    opacity: .1;
+    &:hover {
+        opacity: .5;
+    }
+}
+
+.slick-prev {
+    left: -10px;
+    top: 50%;
+    background-image: url(../../assets/icons/arrow-left.svg);
+    background-size:contain;
+}
+
+.slick-next {
+    right: -10px;
+    top: 50%;
+    background-image: url(../../assets/icons/arrow-right.svg);
+    background-size:contain;
+}
+

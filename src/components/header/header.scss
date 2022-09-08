@@ -1,0 +1,47 @@
+@import '../../styles/variables.scss';
+
+.header {
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__logo, &__theme {
+        margin-right: 10px;
+    }
+    &__logo {
+        height: 65px;
+        width: 65px;
+    }
+    &__title {
+        font-size: 25px;
+        font-weight: 700;
+        color: $main-color;
+    }
+    &__cities {
+        font-weight: 400;
+        select {
+            height: 35px;
+            width: 190px;
+            border-radius: 7px;
+            border: none;
+            background-color: $second-color;
+        }
+        
+    }
+    &__theme {
+        svg {
+            display: none;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+        .active {
+            display: block;
+        }
+    }
+}

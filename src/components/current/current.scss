@@ -1,0 +1,100 @@
+@import '../../styles/variables.scss';
+
+.current {
+    margin-top: 30px;
+    &__temp, &__info {
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        border-radius: 15px;
+        height: 300px;
+    }
+    &__wrapper {
+        display: flex;
+        max-height: 300px;
+        justify-content: space-between;
+    }
+    &__temp {
+        padding: 20px;
+        width: 400px;
+        &-descr {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            text-align: center;
+            height: 100%;
+            p.current__temp-date {
+                font-size: 18px;
+                margin-top: 3px;
+            }
+        }
+        &-value {
+            font-size: 64px;
+            color: $main-color;
+            font-weight: 500;
+        }
+        &-icon {
+            width: 120px;
+            p.current__temp-precip {
+                display: block;
+                text-align: center;
+                font-size: 18px;
+                margin-top: 3px;
+            }
+            svg {
+                display: block;
+                height: 120px;
+            }
+        }
+        &-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 25px;
+            align-items: center;
+            height: 165px;
+            svg {
+                display: block;
+                height: 100%;
+            }
+        }
+        p {
+            font-size: 25px;
+            color: $third-color;
+            line-height: 30px;
+            margin-top: 15px;
+            text-align: left;
+        }
+    }
+    &__info {
+        width: 750px;
+        padding: 32px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-image: url(../../assets/img/cloud_bg.png);
+        background-size: cover;
+        &-item {
+            display: flex;
+            align-items: center;
+            div {
+                margin-right: 20px;
+            }
+        }
+
+        &-icon {
+            height: 36px;
+            width: 36px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            svg {
+                display: block;
+                width: 90%;
+            }
+        }
+
+        &-descr {
+            color: $third-color;
+        }
+    }
+}
